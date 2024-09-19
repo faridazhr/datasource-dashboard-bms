@@ -157,7 +157,11 @@ cyan = '#00B5E3'
 tanggal = df['TIME'].unique()[0]
 
 # Set the locale to Indonesian
-locale.setlocale(locale.LC_ALL, 'id_ID.utf8')
+try:
+    locale.setlocale(locale.LC_ALL, 'id_ID.utf8')
+except locale.Error:
+    locale.setlocale(locale.LC_ALL, 'C')
+
 # Format the date as per Indonesian locale
 hari_ini = tanggal.strftime("%A, %d %B %Y")
 
