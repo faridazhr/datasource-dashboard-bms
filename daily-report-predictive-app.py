@@ -146,6 +146,9 @@ try:
 except Exception as e:
     print(f"Error converting 'TIME' column: {e}")
 
+df = df.dropna(axis=1, how='all')
+df = df.dropna(how='all')
+
 # Color Code
 green = '#65D56A'
 yellow = '#FFF494'
@@ -477,6 +480,7 @@ app.layout = dbc.Container([
 
 def update_graph(value):
     df_temp = df.copy()
+    df_temp['TIME'] = pd.to_datetime(df_temp['TIME'], errors='coerce')
     df_temp['TIME'] = df_temp['TIME'].dt.strftime('%H:%M')
     fig =  generate_graph(data_x=df_temp['TIME'], data_y=df_temp[f'T{value}'], terminal=value)
     return fig
