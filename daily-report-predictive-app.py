@@ -172,6 +172,8 @@ app = Dash(__name__,
                "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap",
            ])
 
+server = app.server
+
 import dash_bootstrap_components as dbc
 from dash import html
 
