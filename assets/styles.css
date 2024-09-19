@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Change text color of the selected value in the dropdown */
+.custom-dropdown .Select-value-label {
+    color: #ffffff !important;  /* Set the text color of the selected value */
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+/* Change background color of the dropdown */
+.custom-dropdown .Select-control {
+    background-color: #19274F !important;  /* Background color for the dropdown */
+}
+
+/* Change the background color of the dropdown options */
+.custom-dropdown .Select-menu-outer {
+    background-color: #00B5E3 !important;  /* Background color of the dropdown menu */
+}
+
+/* Change the text color of the options */
+.custom-dropdown .Select-option {
+    color: #ffffff !important;  /* Text color of each option */
+    font-weight: normal !important;
+}
+
+/* Highlight the option when hovered */
+.custom-dropdown .Select-option.is-focused {
+    background-color: #444444 !important;  /* Background color when hovering over an option */
+    font-weight: normal !important;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
