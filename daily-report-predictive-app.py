@@ -206,14 +206,14 @@ app.layout = dbc.Container([
                         dbc.Col(
                             children=[
                                 html.Img(
-                                    src='assets/Logo EzBus-white (low).png',
+                                    src='https://raw.githubusercontent.com/faridazhr/datasource-dashboard-bms/main/assets/Logo%20EzBus-white%20(low).png',
                                     style={
                                         'height': '35px',
                                         'margin-right': '10px',
                                         'margin-top': '40px'
                                     }),
                                 html.Img(
-                                    src='assets\LOGO PRIMER APSD (1).png',
+                                    src='https://raw.githubusercontent.com/faridazhr/datasource-dashboard-bms/main/assets/LOGO%20PRIMER%20APSD%20(1).png',
                                     style={
                                         'height': '50px',
                                         'margin-right': '20px',
